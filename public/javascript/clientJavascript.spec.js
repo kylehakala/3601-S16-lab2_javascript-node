@@ -15,3 +15,14 @@ describe('testing basic functions', function(){
     });
 });
 
+describe('our new function', function(){
+    it('correctly returns the size of an array', function() {
+        expect(testArrayLength([1, 2, 3]).toBe(3));
+        expect(testArrayLength([].toBe(0)));
+    });
+
+    it('complains if the thing we give it isn\'t an array', function() {
+        expect(testArrayLength({}).toThrowError(TypeError));
+        expect(testArrayLength(35).toThrowError(TypeError));
+    })
+});

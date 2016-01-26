@@ -19,6 +19,21 @@ var testStringLength = function(str){
     return str.length;
 };
 
+/**
+ * Used to get the size of an array. Totally a useful thing.
+ *
+ * @param arr
+ *   The array in question.
+ * @returns number
+ *   The length of the array.
+ */
+var testArrayLength = function(arr) {
+    if (typeof arr != 'array') {
+        throw new TypeError();
+    }
+
+    return arr.length;
+};
 
 /**
  * Takes no arguments, returns the string "kittens"
