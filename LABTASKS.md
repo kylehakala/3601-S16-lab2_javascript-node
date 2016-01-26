@@ -81,10 +81,12 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 ## Part #3: adding a GPA calculator
 
 - Add a page to the project (don't forget to add it to git) that has a form for letter grades and credits for three classes.
+> Created html file.
 
 - In TDD fashion, add tests for functions needed to compute the GPA and then implement the functions themselves. Note, however, that karma doesn't work with exports, so after you have tested the functions, you would need to create copies of them that you are exporting. This is awkward and will be fixed in subsequent node setups. Also make sure to add the file that you are testing to karma.conf.js.
 
 - Add a route to app.js to display the GPA on the resulting page.
+> Added.
 
 - Add the basic html to the send so that the GPA is displayed as an html page. Don't add too much: later we will be using various libraries to take care of generating html.
 

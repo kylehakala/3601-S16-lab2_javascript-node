@@ -59,6 +59,10 @@ app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
 
+app.get('/petForm', function(req, res) {
+    res.sendFile('GPA.html', options);
+});
+
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
     res.send("4-Oh!-4, you done made a wrong turn.");
