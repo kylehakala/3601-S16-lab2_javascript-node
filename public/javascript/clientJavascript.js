@@ -28,7 +28,7 @@ var testStringLength = function(str){
  *   The length of the array.
  */
 var testArrayLength = function(arr) {
-    if (typeof arr != 'array') {
+    if (!(arr instanceof Array)) {
         throw new TypeError();
     }
 
