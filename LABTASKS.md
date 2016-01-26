@@ -55,7 +55,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 > It tells git what to ignore. Specifically, that keeps stuff like dependencies and test results out of the repository.
 
 
-## Part #2: exploring testing
+## Part #2: exploring testing 
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
