@@ -11,15 +11,19 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> Your Answer Here!
+> app.js creates a web server and defines how it responds when certain things are requested. When a user tries to access
+> `/kittens`, the server responds with "Page under construction!" and that's pretty much it. For `/petForm`, it sends
+> `petForm.html`. When a user submits a petForm, the server responds with the name of the pet and the length of the name/string.
+> A route is a URL pattern that the server knows how to respond to. 
 
-#####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
+#####What ~~is~~ *are* the contents of the "public" folder? What ~~is~~ *are* each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> The public folder contains files to be used on the client end, like the images, and the css/html/js files. The html files are the files that are sent
+> when a particular route is requested, and they are referenced by their filename as in `about.html`.
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We went into the app.js file and changed the text that was inside of the `res.send("")` function.
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
