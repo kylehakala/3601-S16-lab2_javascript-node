@@ -4,4 +4,6 @@ exports.stringLength = function(str){
     return str.length;
 };
 
-
+exports.arrayLength = function(arr) {
+    return arr.length;
+};

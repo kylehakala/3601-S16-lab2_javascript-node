@@ -46,8 +46,12 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
-app.post('/petForm', function(req, res){
-    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
+var pets = [];
+
+app.post('/petForm', function(req, res) {
+    pets.push(req.body.newPet);
+
+    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet) + ". There is/are " + tools.arrayLength(pets) + " pets in our array of submitted pets.");
     console.log(req.body.newPet);
 });
 

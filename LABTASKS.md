@@ -38,13 +38,22 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
-> It is defined in the clientJavascript.js
+> It is defined in the clientJavascript.js inside the public folder. It is used in the index.html file. 
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
 
+> The serverJavascript.js file is under the main directory of files and folders. It can be used only for server side js needs. 
+> We created a function that returns the size of an array, and we implemented the function in app.js to display how many pets have been submitted to an
+> array that is defined in app.js.
+
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
-#####What's in .gitgnore file? What's the purpose of it?
+> Package.json contains information about dependencies and `npm` used the info to install dependencies. 
+
+#####What's in ~~.gitgnore~~ *gitignore* file? What's the purpose of it?
+
+> It tells git what to ignore. Specifically, that keeps stuff like dependencies and test results out of the repository.
+
 
 ## Part #2: exploring testing
 
