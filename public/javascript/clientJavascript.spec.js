@@ -1,4 +1,3 @@
-
 //Just some example testing.
 describe('testing basic functions', function(){
     it('should return the correct string length', function(){

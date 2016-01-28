@@ -5,6 +5,74 @@
     <title>GPA Calculator</title>
 </head>
 <body>
-<h1>Calculate your GPA!</h1>
+    <a href="/GPA">GPA</a>
+    <a href="/about">ABOUT</a>
+    <a href="/kittens">KITTENS</a>
+    <a href="/petForm">Add a new pet!</a>
+    <hr>
+    <h1>Calculate your GPA!</h1>
+    <form method="post">
+        <h3>Class 1</h3>
+        <label for="one-credits">Credits:</label>
+        <input type="number" name="credits[1]" id="one-credits" />
+        <label for="one-grade">Grade:</label>
+        <select name="grade[1]" id="one-grade">
+            <option value=""></option>
+            <option value="4">A</option>
+            <option value="3.667">A-</option>
+            <option value="3.333">B+</option>
+            <option value="3">B</option>
+            <option value="2.667">B-</option>
+            <option value="2.333">C+</option>
+            <option value="2">C</option>
+            <option value="1.667">C-</option>
+            <option value="1.333">D+</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+
+        <h3>Class 2</h3>
+        <label for="two-credits">Credits:</label>
+        <input type="number" name="credits[2]" id="two-credits" />
+        <label for="two-grade">Grade:</label>
+        <select name="grade[2]" id="two-grade">
+            <option value=""></option>
+            <option value="4">A</option>
+            <option value="3.667">A-</option>
+            <option value="3.333">B+</option>
+            <option value="3">B</option>
+            <option value="2.667">B-</option>
+            <option value="2.333">C+</option>
+            <option value="2">C</option>
+            <option value="1.667">C-</option>
+            <option value="1.333">D+</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+
+        <h3>Class 1</h3>
+        <label for="three-credits">Credits:</label>
+        <input type="number" name="credits[3]" id="three-credits" />
+        <label for="three-grade">Grade:</label>
+        <select name="grade[3]" id="three-grade">
+            <option value=""></option>
+            <option value="4">A</option>
+            <option value="3.667">A-</option>
+            <option value="3.333">B+</option>
+            <option value="3">B</option>
+            <option value="2.667">B-</option>
+            <option value="2.333">C+</option>
+            <option value="2">C</option>
+            <option value="1.667">C-</option>
+            <option value="1.333">D+</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+
+        <hr />
+
+        <input type="submit" />
+    </form>
+
 </body>
 </html>
