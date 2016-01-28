@@ -11,3 +11,11 @@ img {
     margin-right: auto;
     padding: 10px;
 }
+
+#gpa-result {
+    color: maroon;
+    text-align: center;
+    font-size: 2em;
+    background: gold;
+    padding: 20px;
+}
