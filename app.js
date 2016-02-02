@@ -32,9 +32,18 @@ app.use(express.static(__dirname + '/public'));
 // app.get('/kittens', function(req, res){ etc... }) -- defining a function to handle the request for '/kittens' (req = request, res = response)
 // app.get('/kittens', function(req, res){ res.send('kittens!"); }); -- responding to the request by sending the string "kittens!" to the browser.
 
+var navBar = "<!doctype html><head><link rel='stylesheet' href='/css/main.css'></head><body><nav>" +
+    "<a href='/'>HOME</a>" +
+    "<a href='/GPA'>GPA</a>" +
+    "<a href='/about'>ABOUT</a>" +
+    "<a href='/kittens'>KITTENS</a>" +
+    "<a href='/petForm'>Add a new pet!</a>" +
+    "</nav><hr />";
+
+var pageError = "Page under construction because the kittens destroyed it. Bad kitties.";
 
 app.get('/kittens', function(req, res){
-    res.send("Page under construction because the kittens destroyed it. Bad kitties.");
+    res.send(navBar + pageError);
 });
 
 app.get('/about', function(req, res){
@@ -51,7 +60,7 @@ var pets = [];
 app.post('/petForm', function(req, res) {
     pets.push(req.body.newPet);
 
-    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet) + ". There is/are " + tools.arrayLength(pets) + " pets in our array of submitted pets.");
+    res.send(navBar + req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet) + ". There is/are " + tools.arrayLength(pets) + " pets in our array of submitted pets.");
     console.log(req.body.newPet);
 });
 
@@ -74,8 +83,11 @@ app.post('/GPA', function(req, res) {
             gpa.push([credits, grade]);
         }
     }
+     var gpaResults = navBar +
+         '\ <section><span id="gpa-result">Your GPA is ' + tools.gpa(gpa) + '!' +
+         '\ </span></section></body></html>';
 
-    res.send('<!doctype html><head><link rel="stylesheet" href="/css/main.css" /></head><body><span><p id="gpa-result">Your GPA is ' + tools.gpa(gpa) + '!</p></span></body>');
+    res.send(gpaResults);
 });
 
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
@@ -91,7 +103,5 @@ var server = app.listen(9000, function(){
 
    console.log("server listening on http://%s:%s", host, port);
 });
-
-
 
 

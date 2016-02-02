@@ -1,3 +1,8 @@
+html {
+    font-family: Arial, sans-serif;
+    background: palegoldenrod;
+}
+
 img {
     width: 50%;
     display: block;
@@ -12,10 +17,39 @@ img {
     padding: 10px;
 }
 
+nav > a {
+    margin: 4px;
+    text-decoration: none;
+    color: maroon;
+    background-color: goldenrod;
+    padding: 4px;
+    border: 3px solid goldenrod;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+    margin: 4px;
+    text-decoration: none;
+    color: maroon;
+    background-color: gold;
+    padding: 4px;
+    border: 3px solid gold;
+    border-radius: 3px;
+}
+
+span {
+    display: block;
+}
+
+hr {
+    border: 2px solid maroon;
+}
 #gpa-result {
+
     color: maroon;
     text-align: center;
     font-size: 2em;
     background: gold;
     padding: 20px;
+    margin: 0;
 }
